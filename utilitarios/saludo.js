@@ -12,12 +12,19 @@ saludar = function(){
     mostrarTexto("lblResultado", mensajeBienvenida);
 
     mostrarImgane("imgSaludo","./Imagenes/homer.gif")
+
+    mostrarTextoEnCaja("txtNombre"," ");
 }
 mostrarTexto = function(idComponente,mensaje){
     let conmponente;
     conmponente=document.getElementById(idComponente);
     conmponente.innerText = mensaje;
 
+}
+mostrarTextoEnCaja = function(idComponente,mensaje){
+    let conmponente;
+    conmponente=document.getElementById(idComponente);
+    conmponente.value = mensaje;
 }
 mostrarImgane = function(idComponente,rutaImg){
     let conmponente;
