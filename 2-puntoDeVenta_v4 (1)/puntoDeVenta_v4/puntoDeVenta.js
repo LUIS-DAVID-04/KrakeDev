@@ -47,7 +47,7 @@ calcularValorTotal = function () {
     mostrarTexto("lblDescuento",valorDescuento);
     //8. Invocar a calcularIVA y lo que devuelve guardar en la variable valorIVA
     // El IVA debe calcularse sobre el valor del subtotal menos el descuento
-    valorIVA=calcularIVA(precioProducto);
+    
     //9. Mostrar el resultado en el componente lblValorIVA    
         /*
             Caso de prueba: 
@@ -82,15 +82,14 @@ calcularValorTotal = function () {
 
                 Si el caso de prueba es exitoso, hacer un commit
     */
-    mostrarTexto("lblTotal",valorTotal);        
+          
     //12. Mostrar un resumen en el componente lblResumen, si no existe debe agregarlo
     /*
         Ejemplo: 
             Valor a pagar por 20 cerveza corona con 10% de descuento: USD 48.75
         Si funciona, hacer un commit
     */
-   let mensajeResumen = "Valor a pagar por "+cantidad+" "+nombreProducto+" con "+valorDescuento+" de descuento: USD"+ valorTotal;
-    mostrarTexto("lblResumen",mensajeResumen);  
+   
 }
 limpiar = function () {
     /*
@@ -98,15 +97,7 @@ limpiar = function () {
         Dejar todos los textos de los montos con el valor 0.0
         Si funciona, hacer un commit
      */
-    mostrarTextoEnCaja("txtProducto"," ");
-    mostrarTextoEnCaja("txtCantidad"," ");
-    mostrarTextoEnCaja("txtPrecio"," ");
-    mostrarTextoEnCaja("txtPorcentajeDescuento"," ");
-    mostrarTexto("lblSubtotal"," ");  
-    mostrarTexto("lblDescuento"," ");  
-    mostrarTexto("lblValorIVA"," ");  
-    mostrarTexto("lblTotal"," ");  
-    mostrarTexto("lblResumen"," ");  
+   
 
 }
 /* SI TODO FUNCIONA, HACER UN PUSH */
