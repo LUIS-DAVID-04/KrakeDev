@@ -8,7 +8,16 @@ saludar = function(){
     let edad = recuperarInt("txtedad");
     //Recuperar el valor de la caja de texto txtEstatura 
     let estatura = recuperarFloat("txtestatura");
+    let mensajeBienvenida="Bienvenido " + nombre +" " + Apellido;
+    mostrarTexto("lblResultado", mensajeBienvenida);
 }
+mostrarTexto = function(idComponente,mensaje){
+    let conmponente;
+    conmponente=document.getElementById(idComponente);
+    conmponente.innerText = mensaje;
+
+}
+
 recuperarTexto = function(idComponente){
     let conmponente;
     let valorIngresado;
